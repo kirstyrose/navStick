@@ -65,6 +65,7 @@ input,select{vertical-align:middle}
 
 header {
 	width: 100%;
+	height: auto;
 }
 
 .header__banner {
