@@ -34,6 +34,12 @@ input,select{vertical-align:middle}
 
 ================================================== */
 
+
+body {
+	background: #fff;
+}
+
+
 .container {
 	display: block;
 	max-width: 960px;
@@ -69,7 +75,7 @@ header {
 }
 
 .header__banner {
-	background: url(img/bg.jpg) center center no-repeat fixed;
+	background: url(img/bg.jpg) 50% 0 repeat fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
