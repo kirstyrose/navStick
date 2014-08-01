@@ -1,0 +1,107 @@
+/* page styles
+
+	Contents:
+	
+	1)Mixins and variables
+	1)CSS Reset
+	2)Global Styles
+	3)Header and Navigation
+
+================================================== */
+
+/* 1 - Variables and mixins
+
+================================================== */
+
+$black:#999999;
+$white:#FFFFFF;
+
+@mixin bxsizing(){
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+@mixin bxshadow(){
+	-moz-box-shadow: 0 0 5px $black; 
+	-webkit-box-shadow: 0 0 5px $black; 
+	box-shadow: 0 0 5px $black;
+}
+@mixin bgsize(){
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+/* 2 - Reset
+
+================================================== */
+
+body {
+	margin: 0;
+	padding:0;
+	border:0;
+	font-family: tahoma;
+	@include bxsizing;
+}
+
+/* 3 - Global Styles
+
+================================================== */
+
+.content {
+	height: 2000px;
+	margin: 20px 0 20px 0;
+	.container {
+		display: block;
+		max-width: 960px;
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+	}
+}
+
+.alpha-header {
+	color: $white;
+	font-size: 70px;
+	font-weight: 200;
+	letter-spacing: 10px;
+}
+
+.align-center {
+	text-align: center;
+}
+
+/* 4 - Header and Navigation
+
+================================================== */
+
+header {
+	width: 100%;
+	height: auto;
+	.header__banner {
+		background: url(../img/bg.jpg) 50% 0 repeat fixed;
+		@include bgsize;
+		width: 100%;
+		min-height: 650px;
+	}
+	.header__quote {
+		display: none;
+		padding-top: 35%;
+	}
+}
+
+.navigation {
+	width:100%; 
+	height:50px; 
+	background: $black;
+	@include bxshadow;
+	a {
+		display: inline-block;
+		width: 24%;
+		color: $white;
+		text-decoration: none;
+		line-height: 50px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size: 20px;
+	}
+}
