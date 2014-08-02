@@ -1,4 +1,4 @@
 navStick
 ===
 
-A Jquery sticky navigation effect
+A cool, sticky navigation effect using javascript and jQuery.
