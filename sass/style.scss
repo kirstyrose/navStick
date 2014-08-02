@@ -13,8 +13,9 @@
 
 ================================================== */
 
-$black:#999999;
+$black:#222222;
 $white:#FFFFFF;
+$grey: rgba(238,238,238,0.2);
 
 @mixin bxsizing(){
 	-moz-box-sizing: border-box;
@@ -61,6 +62,7 @@ body {
 
 .alpha-header {
 	color: $white;
+	background: $grey;
 	font-size: 70px;
 	font-weight: 200;
 	letter-spacing: 10px;
@@ -78,14 +80,15 @@ header {
 	width: 100%;
 	height: auto;
 	.header__banner {
-		background: url(../img/bg.jpg) 50% 0 repeat fixed;
+		background: url(../img/bg.jpg) repeat fixed;
 		@include bgsize;
 		width: 100%;
 		min-height: 650px;
 	}
 	.header__quote {
 		display: none;
-		padding-top: 35%;
+		padding: 5%;
+		position:absolute;
 	}
 }
 

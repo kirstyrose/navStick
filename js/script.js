@@ -35,19 +35,9 @@ $(function(){
 
 	});
 
-	$('div[data-type="background"]').each(function(){
-        var $bgobj = $(this); // assigning the object
-     
-        $(window).scroll(function() {
-            var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-             
-            // Put together our final background position
-            var coords = '20% '+ yPos + 'px';
- 
-            // Move the background
-            $bgobj.css({ backgroundPosition: coords });
-        }); 
-    });    
+	skrollr.init({
+		forceHeight: false
+	});
 
 	$('.header__quote').fadeIn(5000);
 
